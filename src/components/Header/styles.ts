@@ -6,9 +6,15 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    width: 100vw;
+    width: 100%;
+    max-width: 918px;
     height: 100px;
 
     margin-top: 50px;
+
+    > img {
+        width: 43px;
+        margin-right: 110px;
+    }
 
 `

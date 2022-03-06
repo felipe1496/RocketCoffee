@@ -5,10 +5,12 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
+    width: 172px;
+
     border: 1px solid var(--button);
     border-radius: 6px;
     
-    padding: 11px 38px;
+    padding: 11px 32px;
 
     text-transform: uppercase;
     flex-shrink: 0;

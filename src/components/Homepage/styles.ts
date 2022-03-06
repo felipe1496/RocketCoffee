@@ -4,6 +4,8 @@ export const Container = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 
     position: relative;
 
@@ -33,7 +35,7 @@ export const BlurLeft = styled.div`
     height: 321px;
 
     left: -29px;
-    top: 495px;
+    bottom: 0;
 
     background: var(--button);
 

@@ -3,7 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     align-items: center;
-    margin: 0 130px 0 140px;
+    width: 100%;
+    justify-content: center;
+    flex: 1;
+    
 
     a{
         font-size: 14px;
