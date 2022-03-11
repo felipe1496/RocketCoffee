@@ -13,7 +13,7 @@ export const Container = styled.div`
     padding: 11px 32px;
 
     text-transform: uppercase;
-    flex-shrink: 0;
+    
 
     font-size: 11px;
 
@@ -22,17 +22,18 @@ export const Container = styled.div`
     a {
         color: var(--text-color);
         font-weight: 800;   
+        flex-shrink: 0;
     }
 
     transition: font-size .6s, text-shadow .6s, background-color .6s;
 
     &:hover {
-        text-shadow: 0 0 5px var(--text-color);
         font-size: 12px;
         background-color: var(--button);
     }
 
-    
-    
-
+    > img {
+        margin-left: 13px;
+        text-shadow: 0 0 5px var(--text-color);
+    }
 `

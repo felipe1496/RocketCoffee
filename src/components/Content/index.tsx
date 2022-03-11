@@ -11,7 +11,7 @@ const Content: React.FC = () => {
                 <h1>Great Coffee</h1>
                 <p>&lt;Great Code/&gt;</p>
             </Title>
-            <img src={Coffee} alt="Coffes" />
+            <img src={Coffee} alt="Coffees" />
         </Container>
     );
 }

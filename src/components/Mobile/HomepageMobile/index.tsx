@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import HeaderMobile from '../HeaderMobile';
 import ContentMobile from '../ContentMobile';
+import SideBar from '../SideBar';
 
-import { Container, Divisor } from './styles';
+import { Container, Divisor, BlurCenter } from './styles';
+
+import { SideBarIsOpenContext } from '../../../App'
 
 const HomepageMobile: React.FC = () => {
+    const { value } = useContext(SideBarIsOpenContext)
+
     return (
         <Container>
             <HeaderMobile />
             <Divisor />
-            {/* <ContentMobile /> */}
+            {value ? <SideBar /> : null}
+            <BlurCenter />
+            <ContentMobile />
         </Container>
     );
 }

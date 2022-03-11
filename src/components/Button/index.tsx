@@ -1,15 +1,23 @@
 import React from 'react';
-import Logo from '../../assets/Logo.svg';
-import NavBar from '../NavBar';
+
+import Arrow from '../../assets/arrow.svg';
 
 import { Container } from './styles';
 
-const Button: React.FC = ({
-    children
+interface Props {
+    haveArrow?: boolean;
+    className?: string;
+}
+
+const Button: React.FC<Props> = ({
+    children,
+    haveArrow,
+    className
 }) => {
     return (
-        <Container>
+        <Container className={className}>
             <a href="#">{children}</a>
+            {haveArrow ? <img src={Arrow} /> : null}
         </Container>
     );
 }

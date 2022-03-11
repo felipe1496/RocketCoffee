@@ -5,7 +5,6 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color: var(--background);
     }
 
     html, body, #root {
@@ -30,5 +29,7 @@ export default createGlobalStyle`
   --border: #29292E;
   --border-menu-mobile: #A8A8B3;
   --text-color-menu-mobile: #E1E1E6;
+
+  --drawer-z-index: 1000;
     }
 `;

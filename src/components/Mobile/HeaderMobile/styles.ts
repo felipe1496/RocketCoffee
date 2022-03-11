@@ -5,7 +5,6 @@ export const Container = styled.div`
     justify-content: center;
     width: 100%;
     height: 95.5px;
-
     position: relative;
 `
 export const Content = styled.div`
@@ -25,10 +24,22 @@ export const Content = styled.div`
         height: 33px;
     }
 
-    .menu-icon {
-        width: 24px;
-        height: 33px;
-    }
+    button {
+        background-color: transparent;
 
+        img {
+            width: 24px;
+            height: 33px;
+
+        cursor: pointer;
+
+        transition: width .6s;
+
+            &:hover {
+                width: 30px;
+            }
+        }
+        margin-bottom: 30px;
+    }
 `
 
