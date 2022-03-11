@@ -7,6 +7,7 @@ export const Container = styled.div`
     justify-content: center;
     flex: 1;
     
+    
 
     a{
         font-size: 14px;

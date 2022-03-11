@@ -9,10 +9,11 @@ export const Container = styled.div`
     align-items: center;
 
     position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
     > img {
-        width: 798.78px;
-        height: 506.47px;
+        height: 60vh;
 
         position: absolute;
 
@@ -25,6 +26,8 @@ export const Title = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    z-index: 500;
 
     margin-top: 40px;
     > h1 {
